@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dashboard.Historial"
+             NavigationPage.HasBackButton="false"
+             Title="">
+
+    <!-- Para que no aparesca el boton de regresar-->
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+
+    <!-- Barra de titulo-->
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image Source="cinesc.png" HeightRequest="60" WidthRequest="60" Aspect="AspectFit" />
+            <Label Text="Cinépolis" FontFamily="ProtestGuerrillaRegular" TextColor="White" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HeightRequest="50" FontSize="30" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    
+    <!--Inicio de secion-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="iconos.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <!-- Contenido-->
+    <VerticalStackLayout>
+        <Image Source="palomitas.png" HeightRequest="200" WidthRequest="200" Aspect="AspectFit" Margin="0,100,0,0"></Image>
+        <Label Text="No se tiene registro de acvividad de compra" FontSize="Large" Padding="20" x:Name="N" FontFamily="OswaldRegular"></Label>
+    </VerticalStackLayout>
+</ContentPage>
