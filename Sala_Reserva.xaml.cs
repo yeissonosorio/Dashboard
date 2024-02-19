@@ -5,6 +5,9 @@ namespace Dashboard;
 
 public partial class Sala_Reserva : ContentPage
 {
+    int count = 0;
+    private List<string> nombresSeleccionados = new List<string>();
+
     public ObservableCollection<ElementoModel> Elementos { get; set; }
     public Sala_Reserva()
 	{
@@ -44,14 +47,25 @@ public partial class Sala_Reserva : ContentPage
         var nombre = elementoModel.Name; // Obtén el nombre del elemento
         if (elementoModel.Icono == "iconoa.png")
         {
-            // Cambiar al icono de presionado
-            elementoModel.SetIcono("iconoac.png");
+            if (count != 6)
+            {
+                elementoModel.SetIcono("iconoac.png");
+                count++;
+                nombresSeleccionados.Add(nombre);
+            }
         }
         else
         {
-            // Volver al icono original
             elementoModel.SetIcono("iconoa.png");
-        }  // Muestra el nombre en un cuadro de alerta
+            count--;
+            nombresSeleccionados.Remove(nombre);
+        }
+        LabelN.Text = string.Join(", ", nombresSeleccionados);
+        if (LabelN.Text == "")
+        {
+            LabelN.Text = "No hay sillas seleccionadas";
+        }
+
     }
 
     public class ElementoModel : INotifyPropertyChanged

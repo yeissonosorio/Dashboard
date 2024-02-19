@@ -76,6 +76,7 @@
 	  <None Remove="Resources\Images\historial.svg" />
 	  <None Remove="Resources\Images\iconoa.png" />
 	  <None Remove="Resources\Images\iconoac.png" />
+	  <None Remove="Resources\Images\iconocarro.png" />
 	  <None Remove="Resources\Images\iconopeli.png" />
 	  <None Remove="Resources\Images\iconore.png" />
 	  <None Remove="Resources\Images\iconos.png" />
