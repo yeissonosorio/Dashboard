@@ -68,14 +68,21 @@
 	  <None Remove="Resources\Fonts\Caveat-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Oswald-Regular.ttf" />
 	  <None Remove="Resources\Fonts\ProtestGuerrilla-Regular.ttf" />
+	  <None Remove="Resources\Images\calendario.png" />
 	  <None Remove="Resources\Images\cine.svg" />
 	  <None Remove="Resources\Images\cinepolisps.jpg" />
 	  <None Remove="Resources\Images\cinepolistg.jpg" />
 	  <None Remove="Resources\Images\cinesc.png" />
 	  <None Remove="Resources\Images\historial.svg" />
+	  <None Remove="Resources\Images\iconoa.png" />
+	  <None Remove="Resources\Images\iconoac.png" />
+	  <None Remove="Resources\Images\iconopeli.png" />
+	  <None Remove="Resources\Images\iconore.png" />
 	  <None Remove="Resources\Images\iconos.png" />
 	  <None Remove="Resources\Images\logoc.png" />
 	  <None Remove="Resources\Images\palomitas.png" />
+	  <None Remove="Resources\Images\poster.webp" />
+	  <None Remove="Resources\Images\ubicacion.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -95,6 +102,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Sala_Reserva.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Secion.xaml">

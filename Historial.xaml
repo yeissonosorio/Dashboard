@@ -13,8 +13,7 @@
     <!-- Barra de titulo-->
     <Shell.TitleView>
         <HorizontalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Image Source="cinesc.png" HeightRequest="60" WidthRequest="60" Aspect="AspectFit" />
-            <Label Text="Cinépolis" FontFamily="ProtestGuerrillaRegular" TextColor="White" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HeightRequest="50" FontSize="30" />
+            <Label Text="Historial"  TextColor="White" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HeightRequest="50" FontSize="30" />
         </HorizontalStackLayout>
     </Shell.TitleView>
     

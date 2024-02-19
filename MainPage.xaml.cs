@@ -28,7 +28,7 @@ public partial class MainPage : ContentPage
             frameEnabled = false;
 
             // Aquí puedes implementar la navegación a otra página
-            await Navigation.PushAsync(new Secion("Cine"));
+            await Navigation.PushAsync(new Sala_Reserva());
 
             // Habilitar el Frame después de un retraso
             await Task.Delay(1000); // Cambia este valor 
